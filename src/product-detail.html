@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee - Product Details</title>
+
+    <!-- Tailwind CSS -->
+    <!--  <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="./src/output.css" rel="stylesheet">
+     <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Nav Bar -->
+
+
+
+    <header class="bg-[#ee4d2d] text-white">
+
+        <!-- Top Navigation -->
+        <div class="hidden lg:flex w-full max-w-5xl mx-auto items-center justify-between px-3 py-2 text-xs">
+
+            <!-- First Group -->
+            <div class="flex items-center gap-3">
+
+                <a href="#">Selling Centre</a>
+                <span class="text-white/50">|</span>
+
+                <a href="#">Start Selling</a>
+                <span class="text-white/50">|</span>
+
+                <a href="#">Download</a>
+                <span class="text-white/50">|</span>
+
+                <a href="#">Follow us on</a>
+
+                <a href="#"><i class="fa-brands fa-facebook text-base"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram text-base"></i></a>
+                <a href="#"><i class="fa-brands fa-line text-base"></i></a>
+
+            </div>
+
+            <!-- Second Group -->
+            <div class="flex items-center gap-3">
+
+                <i class="fa-solid fa-bell"></i>
+                <a href="#">Notifications</a>
+
+                <i class="fa-regular fa-circle-question"></i>
+                <a href="#">Help</a>
+
+                <i class="fa-solid fa-globe"></i>
+                <a href="#">English</a>
+
+                <a href="#">Sign up</a>
+                <span class="text-white/50">|</span>
+                <a href="#">Login</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Logo + Search + Cart -->
+        <div class="mx-auto flex w-full max-w-5xl items-center gap-5 px-3 py-3">
+
+            <!-- Logo -->
+            <a href="index.html" class="flex shrink-0 items-center gap-2 text-xl font-bold sm:text-2xl lg:text-3xl">
+
+                <img src="/img/shopee.png" class="h-12 w-12 object-contain" alt="Shopee Logo">
+
+                <span>Shopee</span>
+
+            </a>
+
+
+            <!-- Search + Suggested Links -->
+            <div class="flex flex-1 flex-col min-w-0 gap-1">
+
+                <!-- Search Bar -->
+                <form action="category.html" method="GET" class="flex w-full rounded-sm bg-white p-1">
+
+                    <input type="search" name="search" placeholder="Search for products..."
+                        class="min-w-0 flex-1 px-3 py-2 text-sm text-gray-800 outline-none">
+
+                    <button type="submit" class="shrink-0 rounded-sm bg-[#ee4d2d] px-6 py-2 text-white">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <!-- Suggested Product Links -->
+                <div class="flex items-center gap-3 overflow-hidden whitespace-nowrap text-xs text-white">
+
+                    <a href="#" class="hover:text-gray-200">16 Pro Max Phone</a>
+                    <a href="#" class="hover:text-gray-200">iPhone 18</a>
+                    <a href="#" class="hover:text-gray-200">iPhone Earpods</a>
+                    <a href="#" class="hover:text-gray-200">Baggy Pants Women</a>
+                    <a href="#" class="hover:text-gray-200">Clothes For Women</a>
+                    <a href="#" class="hover:text-gray-200">6000mah Power Bank</a>
+                    <a href="#" class="hover:text-gray-200">Owala Water Bottle</a>
+
+                </div>
+
+            </div>
+
+            <!-- Cart -->
+            <a href="cart.html" aria-label="Shopping cart" class="shrink-0 text-2xl">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </a>
+
+        </div>
+
+
+    </header>
+
+    <div class="max-w-5xl mx-auto px-3 py-4 text-xs text-gray-600">
+
+        <div class="flex flex-wrap items-center gap-2">
+
+            <a href="index.html" class="text-blue-600">Shopee</a>
+
+            <i class="fa-solid fa-chevron-right text-gray-400"></i>
+
+            <a href="#" class="text-blue-600">Beauty & Personal Care</a>
+
+            <i class="fa-solid fa-chevron-right text-gray-400"></i>
+
+            <a href="#" class="text-blue-600">Make up</a>
+
+            <i class="fa-solid fa-chevron-right text-gray-400"></i>
+
+            <a href="#" class="text-blue-600">Foundation</a>
+
+            <i class="fa-solid fa-chevron-right text-gray-400"></i>
+
+            <span class="text-gray-700">
+                SKINTIFIC Cover All Perfect Air Cushion
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= PRODUCT DETAIL ================= -->
+
+    <main class="max-w-5xl mx-auto px-3">
+
+        <div class="bg-white rounded-sm p-4 md:p-5 shadow-sm">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- ================= LEFT SIDE ================= -->
+
+                <div>
+
+                    <!-- Main Product Image -->
+                    <div class="w-full aspect-square overflow-hidden">
+
+                        <img id="mainImage" src="/img/product1.webp" class="w-full h-full object-contain">
+
+                    </div>
+
+
+                    <!-- Thumbnail Images -->
+                    <div class="grid grid-cols-5 gap-2 mt-3">
+
+                        <img src="/img/product1.webp" onclick="changeImage(this)"
+                            class="thumbnail w-full aspect-square object-cover cursor-pointer border-2 border-[#ee4d2d]">
+
+                        <img src="/img/product2.webp" onclick="changeImage(this)"
+                            class="thumbnail w-full aspect-square object-cover cursor-pointer border border-gray-200 hover:border-[#ee4d2d]">
+
+                        <img src="/img/product3.webp" onclick="changeImage(this)"
+                            class="thumbnail w-full aspect-square object-cover cursor-pointer border border-gray-200 hover:border-[#ee4d2d]">
+
+                        <img src="/img/product4.webp" onclick="changeImage(this)"
+                            class="thumbnail w-full aspect-square object-cover cursor-pointer border border-gray-200 hover:border-[#ee4d2d]">
+
+                        <img src="/img/product5.webp" onclick="changeImage(this)"
+                            class="thumbnail w-full aspect-square object-cover cursor-pointer border border-gray-200 hover:border-[#ee4d2d]">
+
+                    </div>
+
+
+                    <!-- Share & Favorite -->
+                    <div class="flex items-center justify-between mt-6 px-3">
+
+                        <div class="flex items-center gap-3">
+
+                            <span class="text-sm">Share:</span>
+
+                            <a href="#" class="text-blue-500 text-xl">
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </a>
+
+                            <a href="#" class="text-blue-600 text-xl">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+
+                            <a href="#" class="text-red-600 text-xl">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+
+                            <a href="#" class="text-black text-xl">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+
+                        </div>
+
+
+                        <button onclick="toggleFavorite()" class="flex items-center gap-2 text-sm">
+
+                            <i id="heartIcon" class="fa-regular fa-heart text-red-500 text-xl"></i>
+
+                            <span id="favoriteText">Favorite (14.7k)</span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= RIGHT SIDE ================= -->
+
+                <div>
+
+                    <!-- Product Name -->
+                    <div class="flex items-start gap-2">
+
+                        <span class="bg-[#d0011b] text-white text-xs px-2 py-1 mt-1">
+                            Mall
+                        </span>
+
+                        <h1 class="text-lg text-gray-800 leading-7">
+
+                            SKINTIFIC Cover All Perfect Air Cushion
+                            รองพื้น คุชชั่น ปกปิดแน่น กันน้ำ
+                            คุมมัน 12 ชม. ผิวเนียน ปกป้องผิวจากแสงแดด
+
+                        </h1>
+
+                    </div>
+
+
+                    <!-- Rating -->
+                    <div class="flex flex-wrap items-center gap-3 mt-3 text-sm">
+
+                        <div class="flex items-center gap-1">
+                            <span class="underline decoration-[#ee4d2d] text-gray-800">
+                                4.9
+                            </span>
+
+                            <div class="text-yellow-400 text-xs">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <span class="text-gray-300">|</span>
+
+                        <div>
+                            <span class="underline text-gray-800">110.6k</span>
+                            <span class="text-gray-500"> Ratings</span>
+                        </div>
+
+                        <span class="text-gray-300">|</span>
+
+                        <div>
+                            <span class="text-gray-800">600k+</span>
+                            <span class="text-gray-500"> Sold</span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Price -->
+                    <div class="bg-gray-50 mt-4 p-4 flex flex-wrap items-center gap-3">
+
+                        <span class="text-2xl text-[#ee4d2d]">
+                            ฿104 - ฿599
+                        </span>
+
+                        <span class="text-sm text-gray-400 line-through">
+                            ฿749 - ฿1,599
+                        </span>
+
+                        <span class="bg-[#ee4d2d]/10 text-[#ee4d2d] text-xs px-2 py-1">
+                            -86%
+                        </span>
+
+                    </div>
+
+
+                    <!-- Shipping -->
+                    <div class="grid grid-cols-[100px_1fr] gap-3 mt-6 px-4">
+
+                        <span class="text-sm text-gray-500">
+                            Shipping
+                        </span>
+
+                        <div class="text-sm">
+
+                            <div class="text-teal-600">
+                                <i class="fa-solid fa-truck-fast mr-2"></i>
+                                8 Nov - 10 Nov
+                                <i class="fa-solid fa-chevron-right text-xs ml-1"></i>
+                            </div>
+
+                            <p class="mt-1 text-gray-800">
+                                Free shipping
+                            </p>
+
+                            <p class="text-xs text-gray-400 mt-1">
+                                Get up to ฿30 if order arrives late
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Shopping Guarantee -->
+                    <div class="grid grid-cols-[100px_1fr] gap-3 mt-8 px-4">
+
+                        <span class="text-sm text-gray-500">
+                            Shopping Guarantee
+                        </span>
+
+                        <div class="text-sm text-gray-800">
+
+                            <i class="fa-solid fa-shield-halved text-red-500 mr-2"></i>
+
+                            15 Days Free Return · 100% Authentic
+                            · Special Deals · Cheap on Shopee
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Variations -->
+                    <div class="grid grid-cols-[100px_1fr] gap-3 mt-8 px-4">
+
+                        <span class="text-sm text-gray-500">
+                            Variations
+                        </span>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+
+                            <button onclick="selectVariation(this)"
+                                class="variation border border-[#ee4d2d] p-2 text-xs flex items-center gap-2">
+
+                                <img src="/img/product1.webp" class="w-8 h-8 object-contain">
+
+                                [1 FREE 1] 02N+03W
+
+                            </button>
+
+                            <button onclick="selectVariation(this)"
+                                class="variation border border-gray-200 hover:border-[#ee4d2d] p-2 text-xs flex items-center gap-2">
+
+                                <img src="/img/product2.webp" class="w-8 h-8 object-contain">
+
+                                [1 FREE 1] 02N+04N
+
+                            </button>
+
+                            <button onclick="selectVariation(this)"
+                                class="variation border border-gray-200 hover:border-[#ee4d2d] p-2 text-xs flex items-center gap-2">
+
+                                <img src="/img/product3.webp" class="w-8 h-8 object-contain">
+
+                                [BUY 1 GET 2] 01W
+
+                            </button>
+
+                            <button onclick="selectVariation(this)"
+                                class="variation border border-gray-200 hover:border-[#ee4d2d] p-2 text-xs flex items-center gap-2">
+
+                                <img src="/img/product4.webp" class="w-8 h-8 object-contain">
+
+                                [ลดราคา] 03
+
+                            </button>
+
+                            <button onclick="selectVariation(this)"
+                                class="variation border border-gray-200 hover:border-[#ee4d2d] p-2 text-xs flex items-center gap-2">
+
+                                <img src="/img/product5.webp" class="w-8 h-8 object-contain">
+
+                                Cushion 00N
+
+                            </button>
+
+                            <button onclick="selectVariation(this)"
+                                class="variation border border-gray-200 hover:border-[#ee4d2d] p-2 text-xs flex items-center gap-2">
+
+                                <img src="/img/product1.webp" class="w-8 h-8 object-contain">
+
+                                Cushion 00W
+
+                            </button>
+
+                            <button onclick="selectVariation(this)"
+                                class="variation border border-gray-200 hover:border-[#ee4d2d] p-2 text-xs flex items-center gap-2">
+
+                                <img src="/img/product2.webp" class="w-8 h-8 object-contain">
+
+                                Cushion 01W
+
+                            </button>
+
+                            <button onclick="selectVariation(this)"
+                                class="variation border border-gray-200 hover:border-[#ee4d2d] p-2 text-xs flex items-center gap-2">
+
+                                <img src="/img/product3.webp" class="w-8 h-8 object-contain">
+
+                                Cushion 02N
+
+                            </button>
+
+                            <button onclick="selectVariation(this)"
+                                class="variation border border-gray-200 hover:border-[#ee4d2d] p-2 text-xs flex items-center gap-2">
+
+                                <img src="/img/product4.webp" class="w-8 h-8 object-contain">
+
+                                Cushion 03W
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Quantity -->
+                    <div class="grid grid-cols-[100px_1fr] gap-3 mt-8 px-4">
+
+                        <span class="text-sm text-gray-500">
+                            Quantity
+                        </span>
+
+                        <div class="flex items-center gap-3">
+
+                            <div class="flex items-center border border-gray-200">
+
+                                <button onclick="changeQuantity(-1)" class="w-8 h-8 text-gray-500 hover:bg-gray-100">
+                                    -
+                                </button>
+
+                                <input id="quantity" type="text" value="1" readonly
+                                    class="w-12 h-8 text-center text-sm outline-none border-x border-gray-200">
+
+                                <button onclick="changeQuantity(1)" class="w-8 h-8 text-gray-500 hover:bg-gray-100">
+                                    +
+                                </button>
+
+                            </div>
+
+                            <span class="text-xs text-gray-500">
+                                IN STOCK
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Buttons -->
+                    <div class="flex flex-wrap gap-3 mt-8 px-4">
+
+                        <button onclick="addToCart()"
+                            class="flex-1 min-w-[150px] border border-[#ee4d2d] bg-[#ee4d2d]/10 text-[#ee4d2d] py-3 hover:bg-[#ee4d2d]/20">
+
+                            <i class="fa-solid fa-cart-plus mr-2"></i>
+
+                            Add To Cart
+
+                        </button>
+
+                        <button onclick="buyNow()"
+                            class="flex-1 min-w-[150px] bg-[#d0011b] text-white py-3 hover:bg-[#b80018]">
+
+                            Buy Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
