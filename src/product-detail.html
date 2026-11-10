@@ -19,9 +19,9 @@
 <body class="bg-gray-100">
 
     <!-- Reusable Header -->
- <div id="header"></div>
+    <div id="header"></div>
 
- <script src="./js/header.js"></script>
+    <script src="./js/header.js"></script>
 
 
     <div class="max-w-5xl mx-auto px-3 py-4 text-xs text-gray-600">
@@ -454,17 +454,145 @@
             <div class="bg-white shadow-lg">
 
                 <!-- Product Grid -->
-                <div id="productRecommendations" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6
-                gap-0.5 bg-gray-200">
-
-
-                    <!-- PRODUCT 1 -->
-
-
-
+                <div id="productRecommendations"
+                    class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0.5 bg-gray-200">
                 </div>
+
+
+
+
+
             </div>
         </div>
+    </div>
+    <div class=" flex justify-center items-center mt-5 mb-5">
+            <button class="bg-white border border-gray-300 px-20 py-1 text-center">Login To See More</button>
+        </div>
+    <div class="border border-2 border-[#ee4d2d]"></div>
+
+    <!-- Related Products -->
+    <div>
+        <div class="max-w-7xl mx-auto mt-6 300 p-8">
+
+            <h2 class="text-xl font-semibold text-gray-700 mb-6">
+                Related Products
+            </h2>
+
+            <div class="space-y-3 text-sm">
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>1. LCD Screen Display for OnePlus 11 Pro X3 X5</span>
+                    <span class="font-medium">฿550</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>2. OPPO A15/A15S LCD Touch Screen</span>
+                    <span class="font-medium">฿239</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>3. Redmi 9T LCD Display</span>
+                    <span class="font-medium">฿397</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>4. VIVO V20 Battery Back Cover</span>
+                    <span class="font-medium">฿177</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>5. OPPO A36/A76 LCD Touch Screen</span>
+                    <span class="font-medium">฿288</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>6. Honor X8 LCD Screen</span>
+                    <span class="font-medium">฿620</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>7. Redmi 10C LCD Display</span>
+                    <span class="font-medium">฿285</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>8. Samsung A02s Screen Replacement</span>
+                    <span class="font-medium">฿269</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>9. Samsung A32 4G LCD Display</span>
+                    <span class="font-medium">฿620</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>10. Vivo Y11 LCD Screen</span>
+                    <span class="font-medium">฿349</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>11. Honor X7C LCD Display</span>
+                    <span class="font-medium">฿470</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>12. Vivo V50 LCD Screen</span>
+                    <span class="font-medium">฿530</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>13. Realme C53 LCD Touch Screen</span>
+                    <span class="font-medium">฿389</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>14. OPPO F11 Power Button</span>
+                    <span class="font-medium">฿41</span>
+                </div>
+
+                <div class="flex justify-between hover:text-[#ee4d2d] cursor-pointer">
+                    <span>15. OPPO A3 LCD Replacement</span>
+                    <span class="font-medium">฿259</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Other Products You Might Like -->
+        <div class="max-w-7xl mx-auto mt-4 bg-gray-400 p-8 mb-10">
+
+            <h2 class="text-xl font-semibold text-gray-700 mb-6">
+                Other Products You Might Like
+            </h2>
+
+            <div class="text-gray-600 leading-8 text-sm">
+
+                Redmi 10X Pro |
+                Xiaomi Mi 9 SE |
+                Redmi Note 4X 64GB |
+                OPPO A92 |
+                Honor Pad 2 |
+                Wiko Jerry 3 |
+                Apple iPhone 11 |
+                Redmi 9C NFC |
+                Huawei MediaPad T2 |
+                Google Pixel 3 |
+                Apple iPhone SE |
+                DJI Osmo Action 4 |
+                Glass Lens Cover |
+                Redmi Note 12 |
+                Poco X5 Pro |
+                Samsung A55 Case |
+                iPhone 15 Screen Protector
+
+            </div>
+
+        </div>
+        
+        <div id="footer"></div>
+        <script src="./js/footer.js"></script>
+    </div>
     </div>
 
     </div>
@@ -498,9 +626,11 @@
             slider.style.transform = `translateX(-${moveDistance}px)`;
         }
     </script>
-    <script src="./product-detail.js"></script>
     <!-- JavaScript -->
-   
+    <script src="./js/products.js"></script>
+    <script src="./js/product-detail.js"></script>
+
+
 
 </body>
 
