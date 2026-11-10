@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch\" \"live-server src --open=searchresult.html --wait=500\""
+    "dev": "concurrently \"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch\" \"live-server src --open=product-detail.html --wait=500\""
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
