@@ -3,7 +3,7 @@ const products = [
     {
         id: 1,
         name: "True 5G Prepaid SIM Card – 190GB Mobile Internet Package",
-        image: "./img/card.jpeg",
+        image: "./assets/products/card.jpeg",
         price: 13,
         discount: 74,
         sold: 289,
@@ -14,43 +14,43 @@ const products = [
     {
         id: 2,
         name: "Thermal Paper Roll (Receipt Paper Roll)",
-        image: "./img/tissue.jpeg",
+        image: "./assets/products/tissue.jpeg",
         price: 145,
         discount: 99,
         sold: 239,
         shop: "Preferred",
         description: "High-quality thermal receipt paper roll.",
         badges: ["New User Exclusive", "VIP Exclusive"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 3,
         name: "Vivo V80 Lite 5G Smartphone (Pink)",
-        image: "./img/vivov80.jpeg",
+        image: "./assets/products/vivov80.jpeg",
         price: 21999,
         discount: 37,
         sold: 289,
         shop: "Mall",
         description: "Vivo V80 Lite 5G Smartphone in Pink.",
         badges: ["New User Exclusive", "VIP Exclusive"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 4,
         name: "LATAMALL Natural Latex Mattress (Rubber Mattress)",
-        image: "./img/latamall.jpeg",
+        image: "./assets/products/latamall.jpeg",
         price: 700,
         discount: 40,
         sold: 500,
         shop: "Preferred",
         description: "Natural latex rubber mattress.",
         badges: ["New User Exclusive"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 5,
         name: "Fresh Durian",
-        image: "./img/durian.jpeg",
+        image: "./assets/products/durian.jpeg",
         price: 137,
         discount: 60,
         sold: 289,
@@ -60,19 +60,19 @@ const products = [
     {
         id: 6,
         name: "Dopamine Baby Three Years",
-        image: "./img/keychain.jpeg",
+        image: "./assets/products/keychain.jpeg",
         price: 137,
         discount: 33,
         sold: 289,
         shop: "Preferred",
         description: "Cute Baby Three collectible.",
         badges: ["New User Exclusive", "VIP Exclusive"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 7,
         name: "Y68 / D20 Smart Bracelet",
-        image: "./img/watch.jpeg",
+        image: "./assets/products/watch.jpeg",
         price: 137,
         discount: 40,
         sold: 289,
@@ -83,135 +83,135 @@ const products = [
     {
         id: 8,
         name: "Anchi Electric Bike (E-bike)",
-        image: "./img/cycle.jpeg",
+        image: "./assets/products/cycle.jpeg",
         price: 137,
         discount: 55,
         sold: 289,
         shop: "Preferred",
         description: "Anchi electric bike.",
         badges: ["Cheap On Shopee Trendy"],
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 9,
         name: "Vertical-Ribbed Hard-Shell Rolling Suitcases",
-        image: "./img/luggage.jpeg",
+        image: "./assets/products/luggage.jpeg",
         price: 137,
         discount: 35,
         sold: 289,
         shop: "Preferred",
         description: "Vertical-ribbed hard-shell rolling suitcase.",
         badges: ["Cheap On Shopee", "New User Exclusive"],
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 10,
         name: "Light-blue High-waisted Wide-leg Baggy Denim Jeans",
-        image: "./img/sweatpant.jpeg",
+        image: "./assets/products/sweatpant.jpeg",
         price: 133,
         discount: 45,
         sold: 400,
         shop: "Mall",
         description: "Light-blue high-waisted wide-leg denim jeans.",
         badges: ["Cheap On Shopee"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 11,
         name: "WaterLoco (or CIVAGO) 710ml Insulated Stainless Steel Cup",
-        image: "./img/cup.jpeg",
+        image: "./assets/products/cup.jpeg",
         price: 237,
         discount: 50,
         sold: 300,
         shop: "Preferred",
         description: "710ml insulated stainless steel cup.",
         badges: ["VIP Exclusive Price 6% off"],
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 12,
         name: "OUKEYA Blink Blink Blush",
-        image: "./img/eyeshadow.jpeg",
+        image: "./assets/products/eyeshadow.jpeg",
         price: 300,
         discount: 50,
         sold: 460,
         shop: "Preferred",
         description: "OUKEYA Blink Blink Blush.",
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 13,
         name: "Korean-style Nothing Letter Embroidery Cotton Baseball Cap",
-        image: "./img/cap.jpeg",
+        image: "./assets/products/cap.jpeg",
         price: 312,
         discount: 35,
         sold: 300,
         shop: "Mall",
         description: "Korean-style embroidered cotton baseball cap.",
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 14,
         name: "Brown Coffee-colored Stay Humble Zip-up Hoodie",
-        image: "./img/hoodie.jpeg",
+        image: "./assets/products/hoodie.jpeg",
         price: 234,
         discount: 65,
         sold: 400,
         shop: "Mall",
         description: "Brown coffee-colored zip-up hoodie.",
         badges: ["Cheap On Shopee", "New User Exclusive"],
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 15,
         name: "Crocs Classic Clog",
-        image: "./img/crocs.jpeg",
+        image: "./assets/products/crocs.jpeg",
         price: 237,
         discount: 35,
         sold: 300,
         shop: "Preferred",
         description: "Crocs Classic Clog.",
         badges: ["VIP Exclusive Price 5% off"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 16,
         name: "Cartoon Bear-patterned Long-sleeve Pajama",
-        image: "./img/pajama.jpeg",
+        image: "./assets/products/pajama.jpeg",
         price: 137,
         discount: 20,
         sold: 300,
         shop: "Mall",
         description: "Cartoon bear-patterned long-sleeve pajama.",
         badges: ["VIP Cheap On Shopee"],
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 17,
         name: "Aconatic Double Door Refrigerator",
-        image: "./img/refrigerator.jpeg",
+        image: "./assets/products/refrigerator.jpeg",
         price: 500,
         discount: 40,
         sold: 400,
         shop: "Mall",
         description: "Aconatic double door refrigerator.",
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 18,
         name: "White Tote Bag",
-        image: "./img/tote.jpeg",
+        image: "./assets/products/tote.jpeg",
         price: 100,
         discount: 50,
         sold: 200,
         shop: "Preferred",
         description: "Simple white tote bag.",
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 19,
         name: "Purity Thai Gold Rings",
-        image: "./img/ring.jpeg",
+        image: "./assets/products/ring.jpeg",
         price: 136,
         discount: 50,
         sold: 289,
@@ -222,146 +222,146 @@ const products = [
     {
         id: 20,
         name: "Mini Pocket Bike",
-        image: "./img/cycle2.jpeg",
+        image: "./assets/products/cycle2.jpeg",
         price: 237,
         discount: 50,
         sold: 300,
         shop: "Mall",
         description: "Mini pocket bike.",
         badges: ["Cheap On Shopee"],
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 21,
         name: "Hisense 40-inch Full HD VIDAA Smart TV",
-        image: "./img/superday.jpeg",
+        image: "./assets/products/superday.jpeg",
         price: 437,
         discount: 50,
         sold: 289,
         shop: "Mall",
         description: "Hisense 40-inch Full HD VIDAA Smart TV.",
         badges: ["Cheap On Shopee"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 22,
         name: "Hisense CE-Series Inverter Air Conditioner",
-        image: "./img/hisense.png",
+        image: "./assets/products/hisense.png",
         price: 137,
         discount: 40,
         sold: 289,
         shop: "Mall",
         description: "Hisense CE-Series inverter air conditioner.",
         badges: ["Cheap On Shopee"],
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 23,
         name: "Anchi Electric Bike (E-bike)",
-        image: "./img/cycle.jpeg",
+        image: "./assets/products/cycle.jpeg",
         price: 137,
         discount: 50,
         sold: 289,
         shop: "Mall",
         description: "Anchi electric bike.",
         badges: ["Cheap On Shopee"],
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 24,
         name: "Cosmetic and Makeup Gift Set",
-        image: "./img/makeup.jpeg",
+        image: "./assets/products/makeup.jpeg",
         price: 137,
         discount: 50,
         sold: 289,
         shop: "Mall",
         description: "Cosmetic and makeup gift set.",
         badges: ["Cheap On Shopee", "New User Exclusive"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 25,
         name: "Tiny Sticker (Size A7, 7.4 x 10.5 cm)",
-        image: "./img/tiny.jpeg",
+        image: "./assets/products/tiny.jpeg",
         price: 137,
         discount: 50,
         sold: 289,
         shop: "Mall",
         description: "Tiny decorative sticker.",
         badges: ["Cheap On Shopee", "VIP Exclusive Price 1% off"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 26,
         name: "Yoosee Dual-Lens Wireless Outdoor IP Camera",
-        image: "./img/camera.jpeg",
+        image: "./assets/products/camera.jpeg",
         price: 137,
         discount: 50,
         sold: 289,
         shop: "Mall",
         description: "Yoosee dual-lens wireless outdoor IP camera.",
         badges: ["Cheap On Shopee"],
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 27,
         name: "Pink Cartoon-printed Short-sleeve Pajama",
-        image: "./img/pajama1.jpeg",
+        image: "./assets/products/pajama1.jpeg",
         price: 137,
         discount: 40,
         sold: 289,
         shop: "Mall",
         description: "Pink cartoon-printed short-sleeve pajama.",
         badges: ["Cheap On Shopee", "VIP Exclusive Price 1% off"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 28,
         name: "FitFlop Sling Sandals",
-        image: "./img/flipflot.jpeg",
+        image: "./assets/products/flipflot.jpeg",
         price: 137,
         discount: 50,
         sold: 289,
         shop: "Mall",
         description: "FitFlop sling sandals.",
         badges: ["Cheap On Shopee", "VIP Exclusive Price 1% off"],
-        banner: "./img/promotion.webp"
+        banner: "./assets/products/promotion.webp"
     },
     {
         id: 29,
         name: "Thank You Adhesive Packaging Stickers",
-        image: "./img/tape.jpeg",
+        image: "./assets/products/tape.jpeg",
         price: 137,
         discount: 50,
         sold: 289,
         shop: "Preferred",
         description: "Thank You adhesive packaging stickers.",
         badges: ["Shopee On Trendy", "New User Exclusive"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
     {
         id: 30,
         name: "Analog Women's Quartz Watch",
-        image: "./img/moyenne.jpeg",
+        image: "./assets/products/moyenne.jpeg",
         price: 137,
         discount: 50,
         sold: 289,
         shop: "Preferred",
         description: "Analog women's quartz watch.",
         badges: ["Cheap On Shopee", "VIP Exclusive Price 1% off"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     },
-        {
-        id: 3,
+    {
+        id: 31,
         name: "Plus Size Cold Resistance",
-        image: "./img/reistance.webp",
+        image: "./assets/products/resistance.jpeg",
         price: 137,
         discount: 50,
         sold: 289,
         shop: "Preferred",
         description: "Analog women's quartz watch.",
         badges: ["Cheap On Shopee", "VIP Exclusive Price 1% off"],
-        banner: "./img/promo-banner.png"
+        banner: "./assets/products/promo-banner.png"
     }
 ];
 

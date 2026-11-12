@@ -1720,6 +1720,12 @@
   .resize {
     resize: both;
   }
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  .list-none {
+    list-style-type: none;
+  }
   .auto-cols-\[10\%\] {
     grid-auto-columns: 10%;
   }
@@ -1899,6 +1905,9 @@
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     white-space: nowrap !important;
+  }
+  .overflow-auto {
+    overflow: auto;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -2431,6 +2440,9 @@
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
+  }
   .pl-px {
     padding-left: 1px;
   }
@@ -2804,6 +2816,15 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
+  }
+  .group-open\:hidden:is(:where(.group):is([open], :popover-open, :open) *) {
+    display: none;
+  }
+  .group-open\:inline:is(:where(.group):is([open], :popover-open, :open) *) {
+    display: inline;
+  }
+  .group-open\:rotate-180:is(:where(.group):is([open], :popover-open, :open) *) {
+    rotate: 180deg;
   }
   .group-focus-within\:opacity-0:is(:where(.group):focus-within *) {
     opacity: 0%;

@@ -14,16 +14,16 @@
 
 <body class="bg-[#f5f5f5]">
     <!-- nav bar -->
-     <div id="header"></div>
+    <div id="header"></div>
 
- <script src="./js/header.js"></script>
+    <script src="./js/header.js"></script>
 
 
 
     <!-- MAIN -->
     <div class="max-w-7xl mx-auto px-4 py-6">
 
-        <div class="grid grid-cols-12 gap-5">
+        <div class="grid grid-cols-12 gap-5 scrollbar-thin overflow-auto">
             <!-- SideBar -->
             <aside class="col-span-3">
 
@@ -36,71 +36,398 @@
                 </div>
 
                 <!-- SERVICE -->
+
                 <div class="pb-5 border-b border-gray-200">
 
-                    <h3 class="font-semibold mb-3">
+                    <h3 class="font-semibold mb-3 text-sm">
                         Service & Promotion
                     </h3>
 
-                    <div class="space-y-3 text-sm">
+                    <div class="space-y-3 text-sm text-gray-700">
 
-                        <label class="flex gap-2">
+                        <label class="flex items-center gap-2">
                             <input type="checkbox">
                             Free Shipping Xtra
                         </label>
 
-                        <label class="flex gap-2">
+                        <label class="flex items-center gap-2">
                             <input type="checkbox">
                             0% SPayLater Installment
                         </label>
 
-                        <label class="flex gap-2">
+                        <label class="flex items-center gap-2">
                             <input type="checkbox">
                             With Discount
                         </label>
 
-                        <label class="flex gap-2">
+                        <label class="flex items-center gap-2">
                             <input type="checkbox">
-                            Voucher
+                            Wholesale
                         </label>
 
-                    </div>
+                        <!-- More / Less -->
+                        <details class="group">
 
+                            <summary class="list-none cursor-pointer pl-5 font-medium flex items-center gap-2">
+
+                                <span class="group-open:hidden">More</span>
+                                <span class="hidden group-open:inline">Less</span>
+
+                                <svg class="w-3 h-3 transition-transform group-open:rotate-180" fill="none"
+                                    stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+
+                                    <path d="m6 9 6 6 6-6"></path>
+
+                                </svg>
+
+                            </summary>
+
+                            <div class="space-y-3 mt-3">
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    With Video
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Ready Stock
+                                </label>
+
+                            </div>
+
+                        </details>
+
+                    </div>
                 </div>
 
-                <!-- CATEGORY -->
-                <div class="py-5 border-b border-gray-200">
 
-                    <h3 class="font-semibold mb-3">
+                <!-- CATEGORY -->
+                <div class="pb-5 border-b border-gray-200">
+
+                    <h3 class="font-semibold mb-3 text-sm">
                         By Category
                     </h3>
 
-                    <div class="space-y-3 text-sm">
+                    <div class="space-y-3 text-sm text-gray-700">
 
-                        <label class="flex gap-2">
+                        <label class="flex items-center gap-2">
                             <input type="checkbox">
-                            Trash Bins & Bags
+                            Trash and Bins
                         </label>
 
-                        <label class="flex gap-2">
+                        <label class="flex items-center gap-2">
                             <input type="checkbox">
-                            Bags / Crossbody Bags
+                            Bags/CrossBody Bags
                         </label>
 
-                        <label class="flex gap-2">
+                        <label class="flex items-center gap-2">
                             <input type="checkbox">
-                            Luxury Bags
+                            Luxry Bags/ CrossBody Bags
                         </label>
 
-                        <label class="flex gap-2">
+                        <label class="flex items-center gap-2">
                             <input type="checkbox">
-                            Books & Hobbies
+                            Stationery,Books &Hobbies
                         </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Foods & Beverages
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Motors
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Bags/Hand Bags
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Luxry Bags/Hand Bags
+                        </label>
+
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Tote Bags
+                        </label>
+
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Beauty & Personal Care
+                        </label>
+
+                        <!-- More / Less -->
+                        <details class="group">
+
+                            <summary class="list-none cursor-pointer pl-5 font-medium flex items-center gap-2">
+
+                                <span class="group-open:hidden">More</span>
+                                <span class="hidden group-open:inline">Less</span>
+
+                                <svg class="w-3 h-3 transition-transform group-open:rotate-180" fill="none"
+                                    stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+
+                                    <path d="m6 9 6 6 6-6"></path>
+
+                                </svg>
+
+                            </summary>
+
+                            <div class="space-y-3 mt-3">
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Travel & Luggage
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Kitchen & Dining
+                                </label>
+
+                            </div>
+
+                        </details>
 
                     </div>
-
                 </div>
 
+                <!-- Shipped Form -->
+                <div class="pb-5 border-b border-gray-200">
+
+                    <h3 class="font-semibold mb-3 text-sm">
+                        Shipped Form
+                    </h3>
+
+                    <div class="space-y-3 text-sm text-gray-700">
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Domestic
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Overseas
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Bangkok Metropolitan Region
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Central Region
+                        </label>
+
+
+
+                        <!-- More / Less -->
+                        <details class="group">
+
+                            <summary class="list-none cursor-pointer pl-5 font-medium flex items-center gap-2">
+
+                                <span class="group-open:hidden">More</span>
+                                <span class="hidden group-open:inline">Less</span>
+
+                                <svg class="w-3 h-3 transition-transform group-open:rotate-180" fill="none"
+                                    stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+
+                                    <path d="m6 9 6 6 6-6"></path>
+
+                                </svg>
+
+                            </summary>
+
+                            <div class="space-y-3 mt-3">
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Northeastern Region
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Southern Region
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Eastern Region
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Western Region
+                                </label>
+
+                            </div>
+
+                        </details>
+
+                    </div>
+                </div>
+                <!-- Shipping Channel -->
+                <div class="pb-5 border-b border-gray-200">
+
+                    <h3 class="font-semibold mb-3 text-sm">
+                        Shipping Channel
+                    </h3>
+
+                    <div class="space-y-3 text-sm text-gray-700">
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Self Collection Point(in selected areas)
+                        </label>
+
+
+                    </div>
+                </div>
+                <!-- Brands -->
+                <div class="pb-5 border-b border-gray-200">
+
+                    <h3 class="font-semibold mb-3 text-sm">
+                        Brands
+                    </h3>
+
+                    <div class="space-y-3 text-sm text-gray-700">
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            HOTANK
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            David Jones
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            GP Bags
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Labrador
+                        </label>
+
+
+
+                        <!-- More / Less -->
+                        <details class="group">
+
+                            <summary class="list-none cursor-pointer pl-5 font-medium flex items-center gap-2">
+
+                                <span class="group-open:hidden">More</span>
+                                <span class="hidden group-open:inline">Less</span>
+
+                                <svg class="w-3 h-3 transition-transform group-open:rotate-180" fill="none"
+                                    stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+
+                                    <path d="m6 9 6 6 6-6"></path>
+
+                                </svg>
+
+                            </summary>
+
+                            <div class="space-y-3 mt-3">
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Eastpak
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Melinee
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    AIIGIFT
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Longchamp
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Albedo
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Menspe
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    HelloLulu
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    JEEP
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    UUMIR
+                                </label>
+
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    resilver
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Fashion & Bags
+                                </label>
+
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    GIFTHUB
+                                </label>
+
+
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Louis Motini
+                                </label>
+
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Jelly Bunny
+                                </label>
+
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox">
+                                    Villain SF
+                                </label>
+
+                            </div>
+
+                        </details>
+
+                    </div>
+                </div>
                 <!-- PRICE -->
                 <div class="py-5 border-b border-gray-200">
 
@@ -166,6 +493,60 @@
 
                 </div>
 
+                <!-- Condition -->
+                <div class="pb-5 border-b border-gray-200">
+
+                    <h3 class="font-semibold mb-3 text-sm">
+                        Condition
+                    </h3>
+
+                    <div class="space-y-3 text-sm text-gray-700">
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            New
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Used
+                        </label>
+
+                    </div>
+                </div>
+                <!-- Payment Channel -->
+
+                <div class="pb-5 border-b border-gray-200">
+
+                    <h3 class="font-semibold mb-3 text-sm">
+                        Payment Channel
+                    </h3>
+
+                    <div class="space-y-3 text-sm text-gray-700">
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            COD
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Credit card/Debit Card
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Installment
+                        </label>
+                    </div>
+                </div>
+                <button class="w-full bg-[#ee4d2d] text-white py-2">
+
+                    CLEAR ALL
+
+                </button>
+
+
             </aside>
 
             <!-- Content -->
@@ -187,7 +568,7 @@
 
                         <div class="text-center">
 
-                            <img src="/img/src/pasaya.jpeg" class="w-full h-40 object-cover border">
+                            <img src="./assets/searchproducts/pasaya.jpeg" class="w-full h-40 object-cover border">
 
                             <h3 class="mt-2 font-medium">
                                 PASAYA
@@ -202,7 +583,7 @@
                         </div>
 
                         <div>
-                            <img src="/img/bag1.jpg" class="w-full h-40 object-cover border">
+                            <img src="./assets/searchproducts/bag1.jpeg" class="w-full h-40 object-cover border">
 
                             <p class="mt-2 text-sm">
                                 PASAYA Bag
@@ -214,7 +595,7 @@
                         </div>
 
                         <div>
-                            <img src="/img/bag2.jpg" class="w-full h-40 object-cover border">
+                            <img src="./assets/searchproducts/bag2.jpeg" class="w-full h-40 object-cover border">
 
                             <p class="mt-2 text-sm">
                                 PASAYA Bag
@@ -226,7 +607,7 @@
                         </div>
 
                         <div>
-                            <img src="/img/bag3.jpg" class="w-full h-40 object-cover border">
+                            <img src="./assets/searchproducts/bag3.jpeg" class="w-full h-40 object-cover border">
 
                             <p class="mt-2 text-sm">
                                 PASAYA Bag
@@ -310,461 +691,52 @@
 
 
                 <!-- Product Grid -->
-                <div class="grid grid-cols-5 gap-4">
-
-                    <!-- Product 1 -->
-                    <div class="bg-white border hover:shadow-lg transition duration-200">
-                        <img src="/img/bag1.jpg" class="w-full h-52 object-cover">
-
-                        <div class="p-3">
-                            <h3 class="text-sm line-clamp-2">
-                                Fashion Women's Crossbody Bag
-                            </h3>
-
-                            <p class="text-[#ee4d2d] text-lg font-semibold mt-2">
-                                ฿199
-                            </p>
-
-                            <div class="flex justify-between text-xs text-gray-500 mt-2">
-                                <span>⭐ 4.9</span>
-                                <span>20k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 2 -->
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag2.jpg" class="w-full h-52 object-cover">
-
-                        <div class="p-3">
-                            <h3 class="text-sm">Tote Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿299</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>10k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 3 -->
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag3.jpg" class="w-full h-52 object-cover">
-
-                        <div class="p-3">
-                            <h3 class="text-sm">Leather Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿399</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.7</span>
-                                <span>8k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 4 -->
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag4.jpg" class="w-full h-52 object-cover">
-
-                        <div class="p-3">
-                            <h3 class="text-sm">Travel Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿499</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 5.0</span>
-                                <span>12k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 5 -->
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Repeat products -->
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag1.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag2.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag3.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag4.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white border hover:shadow-lg">
-                        <img src="/img/bag5.jpg" class="w-full h-52 object-cover">
-                        <div class="p-3">
-                            <h3 class="text-sm">Mini Bag</h3>
-                            <p class="text-[#ee4d2d] text-lg font-semibold">฿159</p>
-
-                            <div class="flex justify-between text-xs text-gray-500">
-                                <span>⭐ 4.8</span>
-                                <span>5k Sold</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <div class="grid grid-cols-5 gap-4" id="productGrid">
 
                 </div>
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             </main>
 
         </div>
- <div id="footer"></div>
+        <div id="footer"></div>
 
- <script src="./js/footer.js"></script>
+        <script src="./js/footer.js"></script>
+        <script src="./js/searchresult.js"></script>
     </div>
 
     <!-- For Card -->
