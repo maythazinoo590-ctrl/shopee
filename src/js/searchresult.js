@@ -7,6 +7,7 @@ const products = [
         price: 199,
         rating: 4.9,
         sold: "20k"
+
     },
     {
         id: 2,
@@ -154,13 +155,13 @@ const products = [
         name: " Brown corduroy shoulder/crossbody",
         image: "./assets/searchproducts/b18.jpeg",
         price: 200,
-        rating: 4.8,
+        rating: 4.80,
         sold: "10k"
     },
 
     {
         id: 19,
-        name: "Mini Bag",
+        name: " Cream crescent-shaped nylon crossbody bag",
         image: "./assets/searchproducts/b19.jpeg",
         price: 159,
         rating: 4.8,
@@ -169,7 +170,7 @@ const products = [
 
     {
         id: 20,
-        name: "Mini Bag",
+        name: "Minimalist black faux-leather crossbody",
         image: "./assets/searchproducts/b20.jpeg",
         price: 159,
         rating: 4.8,
@@ -178,7 +179,7 @@ const products = [
 
     {
         id: 21,
-        name: "Mini Bag",
+        name: "",
         image: "./assets/searchproducts/b21.jpeg",
         price: 159,
         rating: 4.8,
@@ -187,7 +188,7 @@ const products = [
 
     {
         id: 22,
-        name: "Mini Bag",
+        name: "Black rectangular travel and laptop backpack",
         image: "./assets/searchproducts/b22.jpeg",
         price: 159,
         rating: 4.8,
@@ -196,7 +197,7 @@ const products = [
 
     {
         id: 23,
-        name: "Mini Bag",
+        name: "Cylindrical duffel and gym bags",
         image: "./assets/searchproducts/b23.jpeg",
         price: 159,
         rating: 4.8,
@@ -205,7 +206,7 @@ const products = [
 
     {
         id: 24,
-        name: "Mini Bag",
+        name: " PU leather shoulder hobo bags",
         image: "./assets/searchproducts/b24.jpeg",
         price: 159,
         rating: 4.8,
@@ -214,7 +215,7 @@ const products = [
 
     {
         id: 25,
-        name: "Mini Bag",
+        name: "Light blue-grey flap backpack",
         image: "./assets/searchproducts/b25.jpeg",
         price: 159,
         rating: 4.8,
@@ -223,16 +224,16 @@ const products = [
 
     {
         id: 26,
-        name: "Mini Bag",
+        name: "Army-green canvas hobo bag",
         image: "./assets/searchproducts/b26.jpeg",
-        price: 159,
-        rating: 4.8,
+        price: 200,
+        rating: 5.8,
         sold: "5k"
     },
 
     {
         id: 27,
-        name: "Mini Bag",
+        name: "Cream tote shoulder bag",
         image: "./assets/searchproducts/b27.jpeg",
         price: 159,
         rating: 4.8,
@@ -241,16 +242,16 @@ const products = [
 
     {
         id: 28,
-        name: "Mini Bag",
+        name: "Black flap-top backpack ",
         image: "./assets/searchproducts/b28.jpeg",
-        price: 159,
+        price: 200,
         rating: 4.8,
-        sold: "5k"
+        sold: "10.1k"
     },
 
     {
         id: 29,
-        name: "Mini Bag",
+        name: "Brown canvas messenger or crossbody ",
         image: "./assets/searchproducts/b29.jpeg",
         price: 159,
         rating: 4.8,
@@ -259,7 +260,7 @@ const products = [
 
     {
         id: 30,
-        name: "Mini Bag",
+        name: "Dumpling Crossbody/Shoulder Bags",
         image: "./assets/searchproducts/b30.jpeg",
         price: 159,
         rating: 4.8,
@@ -289,49 +290,101 @@ function displayProducts() {
     productGrid.innerHTML = allProducts.map(product => {
 
         return `
-            <div class="bg-white border hover:shadow-lg transition duration-200 group relative">
+            <div class="bg-white border border-transparent
+            hover:border-[#ee4d2d]
+            hover:shadow-lg transition duration-200
+            group relative cursor-pointer">
 
-                <img src="${product.image}"
-                     alt="${product.name}"
-                     class="w-full h-52 object-cover">
+    <!-- Product Image Container -->
+    <div class="relative overflow-hidden">
 
-                <div class="p-3">
+        <!-- Main Product Image -->
+        <img src="${product.image}"
+             alt="${product.name}"
+             class="w-full aspect-square object-cover
+                    transition-transform duration-300
+                    group-hover:scale-105">
 
-                    <h3 class="text-sm line-clamp-2">
-                        ${product.name}
-                    </h3>
+        <!-- Promotion Banner Image -->
+        <img src="./assets/products/promo-banner.png"
+             alt="Promotion"
+             class="absolute bottom-0 left-0 w-full h-auto
+                    object-contain z-10 pointer-events-none">
 
-                    <p class="text-[#ee4d2d] text-lg font-semibold mt-2">
-                        ฿${product.price}
-                    </p>
+        <!-- Discount -->
+        <span class="absolute top-0 right-0 z-20
+                     bg-[#ee4d2d]/80 text-white
+                     text-xs px-2 py-1">
+            -99%
+        </span>
 
-                    <div class="flex justify-between text-xs text-gray-500 mt-2">
+    </div>
 
-                        <span>⭐ ${product.rating}</span>
+    <!-- Product Details -->
+    <div class="p-2">
 
-                        <span>${product.sold} Sold</span>
+        <!-- Product Name -->
+        <h3 class="text-sm line-clamp-2">
 
-                    </div>
+            <span class="border border-[#ee4d2d]
+                         text-white text-xs
+                         bg-[#ee4d2d] px-1 mr-1">
+                Preferred
+            </span>
 
-                </div>
+            ${product.name}
 
-                <!-- Find Similar -->
-                <div class="absolute bottom-0 left-0 w-full
-                            bg-[#ee4d2d] text-white text-center
-                            py-2 text-sm z-30
-                            opacity-0 invisible
-                            group-hover:opacity-100
-                            group-hover:visible
-                            transition-all duration-200">
+        </h3>
 
-                    Find Similar
+        <!-- Exclusive Tags -->
+        <div class="flex gap-x-2 mt-1">
 
-                </div>
+            <span class="border border-[#ee4d2d]
+                         text-[#ee4d2d] text-xs p-1
+                         rounded-sm w-30 line-clamp-1">
+                New User Exclusive
+            </span>
 
-            </div>
+            <span class="border border-[#ee4d2d]
+                         text-[#ee4d2d] text-xs p-1
+                         rounded-sm w-30 line-clamp-1">
+                VIP Exclusive
+            </span>
+
+        </div>
+
+        <!-- Price and Sold -->
+        <div class="flex justify-between items-center mt-3">
+
+            <span class="text-[#ee4d2d] text-base">
+                ฿${product.price}
+            </span>
+
+            <span class="text-xs text-gray-500">
+                ${product.sold} sold
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- Find Similar -->
+    <div class="absolute top-full left-0 w-full
+                bg-[#ee4d2d] text-white text-center
+                py-2 text-sm z-30
+                opacity-0 invisible
+                group-hover:opacity-100
+                group-hover:visible
+                transition-all duration-200">
+
+        Find Similar
+
+    </div>
+
+</div>
         `;
 
-    }).join("");
+    }).join('');
 
 }
 

@@ -12,8 +12,63 @@ Seller Centre
 Flash Deals
 Media Contact
 
+const product = {
+    name: "Samsung Galaxy Phone",
+    shop: "Official Store",
+    price: 159,
+    discount: 20,
+    sold: 69,
+    description: "Samsung phone description",
 
-<!-- Product Description -->
+    image: "/img/phone1.jpg", // Main image
+
+    images: [
+        "/img/phone1.jpg",
+        "/img/phone2.jpg",
+        "/img/phone3.jpg",
+        "/img/phone4.jpg",
+        "/img/phone5.jpg"
+    ]
+};
+
+
+
+
+
+<!-- Render Product Details -->
+function renderProduct() {
+    const originalPrice = product.price / (1 - product.discount / 100);
+    const gallery = document.getElementById("productGallery");
+    const mainImage = document.getElementById("mainImage");
+
+    document.title = `${product.name} | Shopee`;
+    document.getElementById("productBreadcrumb").textContent = product.name;
+    document.getElementById("productShopBadge").textContent = product.shop;
+    document.getElementById("productName").textContent = product.name;
+    document.getElementById("productSold").textContent = product.sold.toLocaleString();
+    document.getElementById("productPrice").textContent = formatPrice(product.price);
+    document.getElementById("productOriginalPrice").textContent = formatPrice(Math.round(originalPrice));
+    document.getElementById("productDiscount").textContent = `-${product.discount}%`;
+    document.getElementById("productDescription").textContent = product.description;
+    document.getElementById("longDescription").textContent = product.description;
+
+    mainImage.src = product.image;
+    mainImage.alt = product.name;
+    gallery.replaceChildren();
+    const thumbnail = document.createElement("img");
+    thumbnail.src = product.image;
+    thumbnail.alt = `${product.name} thumbnail`;
+    thumbnail.className = "thumbnail w-full aspect-square object-cover cursor-pointer border-2 border-[#ee4d2d]";
+    thumbnail.addEventListener("click", () => {
+        mainImage.src = thumbnail.src;
+    });
+    gallery.append(thumbnail);
+} 
+          <!-- end        -->
+
+
+
+
         <div class="max-w-7xl mx-auto mt-4 bg-white p-6">
 
             <!-- Header -->
